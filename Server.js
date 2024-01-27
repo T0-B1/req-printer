@@ -1,6 +1,6 @@
 const http = require('http');
 const { exit } = require('process');
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
     console.log("------- REQ -------")
